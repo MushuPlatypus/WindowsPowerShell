@@ -2,16 +2,16 @@
 
 $psdir=$env:USERPROFILE
 Get-ChildItem "${psdir}\Documents\WindowsPowerShell\Scripts\*.ps1" | %{.$_}
-
-Remove-Item Alias:ls
-Set-Alias ls ChildItemColor
+Import-Module PSColor
+# Remove-Item Alias:ls
+# Set-Alias ls ChildItemColor
 
 Remove-Item Alias:cd
 Set-Alias cd CdDash
 
 Set-Alias sub "C:\Program Files\Sublime Text 3\sublime_text.exe"
 
-New-PSDrive FT filesystem 'F:\Projects\FT'
+# New-PSDrive FT filesystem 'F:\Projects\FT'
 
 Set-Alias android AndroidDebug
 
@@ -23,7 +23,7 @@ Set-Alias -Name pf -Value project-f
 
 
 # Load posh-git example profile
-. 'C:\Users\jan\Documents\GitHub\posh-git\profile.example.ps1'
+. 'C:\Users\Jannik Nilsson\Documents\WindowsPowerShell\Modules\posh-git\profile.example.ps1'
 
 # Remove Defaults
 rename-item alias:\gc gk -force
