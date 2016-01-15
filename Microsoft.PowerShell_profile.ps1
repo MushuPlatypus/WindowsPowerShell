@@ -76,6 +76,9 @@ Set-Alias -Name grc -Value git-rebase-continue
 function git-push { git push }
 Set-Alias -Name gp -Value git-push
 
+function git-cred { git config --global credential.helper wincred }
+Set-Alias -Name gitcred -Value git-cred
+
 # Frontend run
 function frontend-run { npm run frontend --task=$args }
 Set-Alias -Name run -Value frontend-run
