@@ -15,3 +15,7 @@ Set-Alias android AndroidDebug
 
 cd c:\
 
+
+# Load posh-npm example profile
+. 'C:\Users\Jannik Nilsson\Documents\WindowsPowerShell\Modules\posh-npm\profile.example.ps1'
+
