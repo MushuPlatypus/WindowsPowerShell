@@ -27,11 +27,4 @@ Set-Alias -Name atom -Value atom-run
 Set-Alias android AndroidDebug
 
 cd c:\
-<<<<<<< HEAD
 
-
-# Load posh-npm example profile
-. 'C:\Users\Jannik Nilsson\Documents\WindowsPowerShell\Modules\posh-npm\profile.example.ps1'
-
-=======
->>>>>>> c3064881ff552cdcc82122b991ffe2e096ace39c
