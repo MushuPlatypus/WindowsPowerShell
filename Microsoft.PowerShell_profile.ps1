@@ -8,7 +8,7 @@
 
 $psdir=$env:USERPROFILE
 
-gci -re "C:\Users\Jannik Nilsson\Documents\WindowsPowerShell\scripts\*.ps1" | %{.$_}
+gci -re "${psdir}\Documents\WindowsPowerShell\scripts\*.ps1" | %{.$_}
 
 Import-Module PSColor
 
